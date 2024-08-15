@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos con Amigos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            color: white;
+        }
+        main {
+            padding: 20px;
+        }
+        .game-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .game-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 15px;
+            margin: 10px;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+        .chat {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>¡Juega con tus Amigos!</h1>
+        <p>Elige un juego y chatea mientras juegas</p>
+    </header>
+    <main>
+        <section class="game-list">
+            <div class="game-item">
+                <h2>Juego 1: Pong</h2>
+                <iframe src="https://pong-2players.firebaseapp.com/"></iframe>
+            </div>
+            <div class="game-item">
+                <h2>Juego 2: Tic-Tac-Toe</h2>
+                <iframe src="https://playtictactoe.org/"></iframe>
+            </div>
+            <div class="game-item">
+                <h2>Juego 3: Ajedrez</h2>
+                <iframe src="https://www.chess.com/play/computer"></iframe>
+            </div>
+            <!-- Añadir más juegos aquí -->
+        </section>
+        
+        <section class="chat">
+            <h2>Chat en Vivo</h2>
+            <iframe src="https://www.tlk.io/tu-chat" width="100%" height="400px"></iframe>
+            <p>Usa este chat para hablar mientras juegas con tus amigos.</p>
+        </section>
+    </main>
+</body>
+</html>
